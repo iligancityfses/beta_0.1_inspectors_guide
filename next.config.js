@@ -8,6 +8,9 @@ const nextConfig = {
   // Remove trailing slashes for better compatibility with Vercel
   trailingSlash: false,
   
+  // Explicitly define the source directory
+  distDir: '.next',
+  
   // Ensure images are properly optimized
   images: {
     domains: ['vercel.com'],
