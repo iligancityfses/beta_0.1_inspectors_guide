@@ -5,13 +5,13 @@ const nextConfig = {
   // Change from 'standalone' to default for Vercel deployment
   // output: 'standalone',
   
-  // Add trailing slashes to ensure consistent routing
-  trailingSlash: true,
+  // Remove trailing slashes for better compatibility with Vercel
+  trailingSlash: false,
   
   // Ensure images are properly optimized
   images: {
     domains: ['vercel.com'],
-    unoptimized: process.env.NODE_ENV !== 'production',
+    unoptimized: false,
   },
 };
 
